@@ -5,6 +5,9 @@ import About from "./componenets/About"
 import Skills from "./componenets/Skills"
 import Project from "./componenets/Project"
 import Service from "./componenets/Service"
+import Timeline from "./componenets/Timeline"
+import Testimonials from "./componenets/Testimonials"
+import Contact from "./componenets/Contact"
 
 function App() {
   const [user, setUser] = useState(null)
@@ -25,13 +28,16 @@ function App() {
 
   
   return (
-    <div className="w-screen h-[10000px] bg-violet-950 text-white">
+    <div className="w-screen h-max bg-violet-950 text-white">
       <AppBar/>
       <div className="md:py-32 py-10">
       <About data={user}/>
       <Skills data={user}/>
       <Project data={user}/>
       <Service data={user}/>
+      <Timeline data={user}/>
+      <Testimonials data={user}/>
+      <Contact data={user}/>
       </div>
     </div>
   )
