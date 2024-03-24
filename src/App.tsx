@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import AppBar from "./componenets/AppBar"
 import About from "./componenets/About"
 import Skills from "./componenets/Skills"
+import Project from "./componenets/Project"
+import Service from "./componenets/Service"
 
 function App() {
   const [user, setUser] = useState(null)
@@ -28,6 +30,8 @@ function App() {
       <div className="md:py-32 py-10">
       <About data={user}/>
       <Skills data={user}/>
+      <Project data={user}/>
+      <Service data={user}/>
       </div>
     </div>
   )

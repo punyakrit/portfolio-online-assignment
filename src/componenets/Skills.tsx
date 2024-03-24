@@ -14,7 +14,7 @@ function Skills({ data }: any) {
         {data.skills.map((skill: any) => (
           <div
             key={skill._id}
-            className={`bg-violet-800 p-4 rounded-lg cursor-pointer ${
+            className={`bg-violet-800 p-4 rounded-2xl shadow-md shadow-white/20 cursor-pointer ${
               selectedSkill === skill._id ? "border-2 border-blue-500" : ""
             }`}
             onClick={() => handleSkillClick(skill)}
