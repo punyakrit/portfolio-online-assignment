@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import AppBar from "./componenets/AppBar"
 import About from "./componenets/About"
+import Skills from "./componenets/Skills"
 
 function App() {
   const [user, setUser] = useState(null)
@@ -24,8 +25,9 @@ function App() {
   return (
     <div className="w-screen h-[10000px] bg-violet-950 text-white">
       <AppBar/>
-      <div className="py-32">
+      <div className="md:py-32 py-10">
       <About data={user}/>
+      <Skills data={user}/>
       </div>
     </div>
   )
